@@ -10,7 +10,7 @@ const LoginBox = () => {
 
     const createUser = (data: User) => {
         setLoading(true);
-        axios.post('https://signup-env.eba-dxpaxfbz.ap-south-1.elasticbeanstalk.com/api/users', { data })
+        axios.post('http://signup-env.eba-dxpaxfbz.ap-south-1.elasticbeanstalk.com/api/users', { data })
             .then(() => {
                 setLoading(false);
                 setResponse(true);
